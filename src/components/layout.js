@@ -63,10 +63,10 @@ const TemplateWrapper = ({ children }) => {
               />
               <ul className="sidebar__menu">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">Loja</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/about">Informações</Link>
                 </li>
               </ul>
               <p className="sidebar__social">
@@ -90,12 +90,10 @@ const TemplateWrapper = ({ children }) => {
             <div className="container__mobile-header">
               <div className="mobile-header">
                 <div className="mobile-header__menu">
-                  <button
-                    onClick={e => {
+                  <button onClick={e => {
                       e.preventDefault();
                       setShowMenu(!showMenu);
-                    }}
-                  />
+                    }}>Menu</button>
                 </div>
                 <div className="mobile-header__logo">
                   <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
